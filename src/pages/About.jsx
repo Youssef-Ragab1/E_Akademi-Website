@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Users } from 'lucide-react';
+import { GraduationCap, Users, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import './About.css';
 
@@ -139,6 +139,44 @@ export default function About() {
                 </div>
               </motion.div>
             ))}
+          </motion.div>
+        </motion.div>
+
+        {/* Supervisor */}
+        <motion.div
+          className="about__supervisor"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={stagger}
+        >
+          <motion.h2 className="section-title" variants={fadeUp}>
+            {t('supervisorTitle')} <span className="gradient-text">{t('supervisorTitleAccent')}</span>
+          </motion.h2>
+
+          <motion.div
+            className="glass-card about__supervisor-card"
+            variants={fadeUp}
+            custom={1}
+            whileHover={{ y: -8, borderColor: '#F59E0B' }}
+          >
+            <div
+              className="about__team-avatar"
+              style={{ background: 'rgba(245, 158, 11, 0.12)', color: '#F59E0B' }}
+            >
+              A
+            </div>
+            <h3 className="about__team-name">Dr. Öğr. Üyesi Ammar Mohammed Ali AL-QADASİ</h3>
+            <p className="about__supervisor-role">{t('supervisorRole')}</p>
+            <a
+              href="https://kfrm.karabuk.edu.tr/ammaralqadasi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__supervisor-link"
+            >
+              <ExternalLink size={16} />
+              {t('supervisorProfile')}
+            </a>
           </motion.div>
         </motion.div>
 

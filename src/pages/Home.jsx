@@ -92,14 +92,14 @@ export default function Home() {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <img src="/screenshots/6-Doctor-Interface.jpg" alt="Doctor Interface" />
+                <img src="/screenshots/4-Student-Interface.jpg" alt="Student Interface" />
               </motion.div>
               <motion.div
                 className="phone-mockup hero__phone hero__phone--secondary"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
               >
-                <img src="/screenshots/4-Student-Interface.jpg" alt="Student Interface" />
+                <img src="/screenshots/6-Doctor-Interface.jpg" alt="Doctor Interface" />
               </motion.div>
             </div>
           </motion.div>
