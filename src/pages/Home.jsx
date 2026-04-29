@@ -56,7 +56,7 @@ export default function Home() {
         <div className="container hero__content">
           <motion.div className="hero__text" initial="hidden" animate="visible" variants={stagger}>
             <motion.p className="hero__badge" variants={fadeUp}>
-              🎓 Graduation Project — Karabük University
+              🎓 Graduation Project — Karabük University hero
             </motion.p>
             <motion.h1 className="hero__title" variants={fadeUp}>
               {t('heroTitle')}{' '}
