@@ -169,7 +169,7 @@ export default function About() {
             <h3 className="about__team-name">Dr. Öğr. Üyesi Ammar Mohammed Ali AL-QADASİ</h3>
             <p className="about__supervisor-role">{t('supervisorRole')}</p>
             <a
-              href="https://kfrm.karabuk.edu.tr/ammaralqadasi"
+              href="https://unis.karabuk.edu.tr/akademisyen-detay/ammarmohammed"
               target="_blank"
               rel="noopener noreferrer"
               className="about__supervisor-link"
