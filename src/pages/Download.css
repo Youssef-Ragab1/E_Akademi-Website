@@ -1,0 +1,220 @@
+/* ═══════════════════════════════════════════════════════
+   Download Page Styles
+   ═══════════════════════════════════════════════════════ */
+
+.download-page {
+  position: relative;
+  padding-top: calc(var(--nav-height) + 40px);
+  min-height: 100vh;
+}
+
+.download-page__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ─── Hero ────────────────────────────────────────── */
+.download__hero {
+  text-align: center;
+  padding: 80px 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.download__icon-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download__icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: 24px;
+  color: #0A0A0F;
+  position: relative;
+  z-index: 2;
+}
+
+.download__icon-ring {
+  position: absolute;
+  inset: -10px;
+  border: 2px solid var(--accent-gold);
+  border-radius: 32px;
+  opacity: 0.2;
+  animation: ping 2s ease-in-out infinite;
+}
+
+.download__icon-ring--2 {
+  inset: -24px;
+  border-radius: 40px;
+  animation-delay: 0.5s;
+}
+
+@keyframes ping {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.1); opacity: 0.05; }
+}
+
+.download__title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.download__subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+.download__btn {
+  font-size: 1.15rem !important;
+  padding: 18px 48px !important;
+  margin-top: 8px;
+}
+
+/* ─── Info Grid ───────────────────────────────────── */
+.download__info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 48px 0 64px;
+}
+
+.download__info-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.download__info-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.download__info-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+/* ─── Two Column ──────────────────────────────────── */
+.download__two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+
+.download__section-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.download__section-icon--blue {
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--info);
+}
+
+.download__section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Requirements */
+.download__req-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.download__req-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.download__req-icon {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* Install Steps */
+.download__install-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  counter-reset: none;
+}
+
+.download__install-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.download__install-num {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+/* ─── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .download__title {
+    font-size: 2rem;
+  }
+
+  .download__info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .download__two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .download__hero {
+    padding: 40px 0 32px;
+  }
+}

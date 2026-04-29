@@ -1,0 +1,206 @@
+/* ═══════════════════════════════════════════════════════
+   About Page Styles
+   ═══════════════════════════════════════════════════════ */
+
+.about-page {
+  position: relative;
+  padding-top: calc(var(--nav-height) + 40px);
+  padding-bottom: 80px;
+  min-height: 100vh;
+}
+
+.about-page__bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ─── Header ──────────────────────────────────────── */
+.about__header {
+  text-align: center;
+  padding: 80px 0 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.about__icon-wrap {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+  border-radius: 24px;
+  margin-bottom: 8px;
+}
+
+.about__title {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.about__subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+/* ─── Description ─────────────────────────────────── */
+.about__desc-card {
+  max-width: 800px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.about__desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ─── Tech Stack ──────────────────────────────────── */
+.about__tech {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about__section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.about__tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.about__tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, transform 0.2s;
+  cursor: default;
+}
+
+.about__tech-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ─── Team ────────────────────────────────────────── */
+.about__team {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.about__team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.about__team-card {
+  text-align: center;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.3s;
+}
+
+.about__team-avatar {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.about__team-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.about__team-id {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.about__team-uni {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ─── University Banner ───────────────────────────── */
+.about__uni-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+}
+
+.about__uni-icon {
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.about__uni-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.about__uni-detail {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* ─── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__header {
+    padding: 40px 0 32px;
+  }
+
+  .about__team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__uni-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
