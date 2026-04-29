@@ -28,7 +28,7 @@ export default function Home() {
   ];
 
   const steps = [
-    { icon: <UserCheck size={28} />, title: t('step1Title'), desc: t('step1Desc'), img: '/screenshots/3-Register-Face.png' },
+    { icon: <UserCheck size={28} />, title: t('step1Title'), desc: t('step1Desc'), img: '/screenshots/3-Register-Face.jpg' },
     { icon: <QrCode size={28} />, title: t('step2Title'), desc: t('step2Desc'), img: '/screenshots/9-Doctor-Starts-Session.png' },
     { icon: <ScanFace size={28} />, title: t('step3Title'), desc: t('step3Desc'), img: '/screenshots/4-Student-Interface.jpg' },
     { icon: <CheckCircle size={28} />, title: t('step4Title'), desc: t('step4Desc'), img: '/screenshots/5-Face-Verification.jpeg' },
@@ -37,15 +37,16 @@ export default function Home() {
   const screenshots = [
     { src: '/screenshots/1-login-homepage.png', alt: 'Login Home Page' },
     { src: '/screenshots/2-register-page.png', alt: 'Register Page' },
-    { src: '/screenshots/3-Register-Face.png', alt: 'Register Face' },
+    { src: '/screenshots/3-Register-Face.jpg', alt: 'Register Face' },
     { src: '/screenshots/4-Student-Interface.jpg', alt: 'Student Interface' },
     { src: '/screenshots/5-Face-Verification.jpeg', alt: 'Face Verification' },
     { src: '/screenshots/6-Doctor-Interface.jpg', alt: 'Doctor Interface' },
-    { src: '/screenshots/7-Doctor-Students-Informations.png', alt: 'Doctor Student Information' },
-    { src: '/screenshots/8-Student-Sessions.png', alt: 'Student Sessions' },
+    { src: '/screenshots/7-Doctor-Students-Informations.jpg', alt: 'Doctor Student Information' },
+    { src: '/screenshots/8-Student-Sessions.jpg', alt: 'Student Sessions' },
     { src: '/screenshots/9-Doctor-Starts-Session.png', alt: 'Doctor Stats Session' },
-    { src: '/screenshots/10-doctor-Analysis-View.png', alt: 'Doctor Analysis View' },
+    { src: '/screenshots/10-doctor-Analysis-View.jpg', alt: 'Doctor Analysis View' },
     { src: '/screenshots/11-Final-Verified.png', alt: 'Final Verified' },
+    { src: '/screenshots/12-Doctor-Report.jpg', alt: 'Doctor Report' },
   ];
 
   return (
@@ -92,14 +93,14 @@ export default function Home() {
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <img src="/screenshots/4-Student-Interface.jpg" alt="Student Interface" />
+                <img src="/screenshots/6-Doctor-Interface.jpg" alt="Doctor Interface" />
               </motion.div>
               <motion.div
                 className="phone-mockup hero__phone hero__phone--secondary"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
               >
-                <img src="/screenshots/6-Doctor-Interface.jpg" alt="Doctor Interface" />
+                <img src="/screenshots/4-Student-Interface.jpg" alt="Student Interface" />
               </motion.div>
             </div>
           </motion.div>
