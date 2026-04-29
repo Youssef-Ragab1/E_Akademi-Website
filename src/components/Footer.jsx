@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { GraduationCap, Heart } from 'lucide-react';
+import { Heart } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import { useLanguage } from '../context/LanguageContext';
 import './Footer.css';
 
@@ -14,7 +15,7 @@ export default function Footer() {
           <div className="footer__brand">
             <div className="footer__logo">
               <div className="navbar__logo-icon">
-                <GraduationCap size={20} />
+                <img src={logoImg} alt="E_Akademi" className="navbar__logo-img" />
               </div>
               <span className="navbar__logo-text">E_Akademi</span>
             </div>

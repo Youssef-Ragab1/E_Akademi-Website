@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Globe, GraduationCap } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import { useLanguage } from '../context/LanguageContext';
 import './Navbar.css';
 
@@ -40,7 +41,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="navbar__logo">
             <div className="navbar__logo-icon">
-              <GraduationCap size={24} />
+              <img src={logoImg} alt="E_Akademi" className="navbar__logo-img" />
             </div>
             <span className="navbar__logo-text">E_Akademi</span>
           </Link>
