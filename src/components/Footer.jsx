@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Heart } from 'lucide-react';
 import logoImg from '../assets/logo.png';
 import { useLanguage } from '../context/LanguageContext';
 import './Footer.css';
@@ -41,11 +40,6 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <p>© 2026 E_Akademi. {t('footerRights')}</p>
-          <p className="footer__made">
-            {t('footerMadeWith').split('❤️')[0]}
-            <Heart size={14} className="footer__heart" fill="var(--error)" color="var(--error)" />
-            {t('footerMadeWith').split('❤️')[1]}
-          </p>
         </div>
       </div>
     </footer>
